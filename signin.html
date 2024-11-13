@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>회원 가입을 환영합니다</h1>
+
+    <form>
+        <fieldset>
+            <legend>사용자 정보</legend>
+            <ul>
+                <li>
+                    <label for="sign_user_id">아이디 
+                        <input type="id" id="sign_user_id" required placeholder="4자 ~ 10자 사이, 공백없이">
+                    </label>
+                </li>
+                <li>
+                    <label for="sign_user_email">이메일 <input type="email" id="sign_user_email" required>
+                    </label>
+                </li>
+                <li>
+                    <label for="sign_user_pw">비밀번호 <input type="password" id="sign_user_pw" required placeholder="문자와 숫자, 특수 기호 포함">
+                    </label>
+                </li>
+                <li>
+                    <label for="sign_user_pw_check">비밀번호 확인 <input type="password" id="sign_user_pw_check" required>
+                    </label>
+                </li>
+                <li>
+                    <label for="sign_root">가입 경로 </label>
+                    <select id="sign_root">
+                        <option value="blog">블로그</option>
+                        <option value="cafe">카페</option>
+                        <option value="youtube">유튜브</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="sign_memo">메모 <textarea id="sign_memo" placeholder="남길 말씀이 있다면 여기에"></textarea> </label>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>이벤트와 새로운 소식</legend>
+            <label><input type="radio" name="mail_get_check" value="mail_get_true" checked>메일 수신</label>
+            <label><input type="radio" name="mail_get_check" value="mail_get_false">메일 수신 안함</label>
+        </fieldset>
+        <input type="submit" value="가입하기">
+        <input type="reset" value="취소">
+    </form>
+    <a href="index.html"><button>돌아가기</button></a>
+</body>
+</html>
