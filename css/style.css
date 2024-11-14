@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+}
+
+.top_background_outer {
+    height: 300px;                   /* 원하는 높이 설정 */
+    background-image: url('../img/background.png');
+    background-size: cover;          /* 이미지가 잘림 없이 채우도록 설정 */
+    background-position: center;     /* 이미지 가운데 정렬 */
+    display: flex;                   /* 중앙 정렬 */
+    justify-content: center;
+    color: black;                    /* 텍스트 색상 */
+    z-index: -1;
+}
+
+.top_background_inner{
+    z-index: 0;
+}
+
+.job_title{
+    position: relative;
+    top:10px;
+    left:-80px;
+    z-index: 1; 
+    color: skyblue;
+    font-family: "Bagel Fat One", system-ui;
+    font-weight: 400;
+    font-size: 80px;
+    font-style: normal;
+    text-shadow: 5px -3px 5px #171869;
+}
+
+.gotocourse{
+    font-family: "Bagel Fat One", system-ui;
+    font-weight: 200;
+    font-size: 30px;
+    color: white;
+
+}
+
+
+#cloud_info{
+    color:blue;
+    background-color: bisque;
+}
+
+div{
+    text-align: center;
+}
+
+li{
+    list-style: none;
+    width: 30%;
+    margin-top: 3px;
+    border: 3px solid skyblue;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #2FB3EC;
+    text-decoration: none;
+    color:white;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* 셀 테두리 겹치기 */
+    border-spacing: 0; /* 셀 간격 없애기 */
+    caption-side: bottom;
+}
+th, td {
+    border: 1px solid black; /* 셀 테두리 설정 */
+    text-align: center;
+}
